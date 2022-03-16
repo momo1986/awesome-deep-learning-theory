@@ -13,7 +13,7 @@ Notes:
 #### 2. ICML Invited Talk: Max Welling - Intelligence per Kilowatthour
   Materials: [Youtube](https://www.youtube.com/watch?v=avtVbH2rdg0) (not from ICML)
   - Various views, not only on intelligence per Kilowatthour, but also philosophical question about computational world.
-  
+
 #### 3. ICML 2018 Invited Talk: Josh Tenenbaum - Building Machines that Learn and Think Like People
   Materials: [paper](https://arxiv.org/pdf/1604.00289.pdf) - 55p, [ICML Video](https://www.youtube.com/watch?v=RB78vRUO6X8)
   - His view on the importance of Probabilistic Programming Language (BayesFlow, ProbTorch, WebPPL...)
@@ -104,7 +104,7 @@ Notes:
   - Study the number of linear regions, i.e. pieces, that a PWL function represented by a DNN can attain, both theoretically and empirically.
   - Tighter upper and lower bounds for the maximum number of linear regions on rectifier networks.
   - Indicate that a deep rectifier network can only have more linear regions than every shallow counterpart with same number of neurons if that number exceeds the dimension of the input.
-  
+
  #### 15. [A Theoretical Explanation for Perplexing Behaviors of Backpropagation-based Visualizations](http://proceedings.mlr.press/v80/nie18a.html)
   Materials: [pdf](http://proceedings.mlr.press/v80/nie18a/nie18a.pdf), [supp](http://proceedings.mlr.press/v80/nie18a/nie18a-supp.pdf)
   - Backpropagation-based visualizations have been proposed to interpret convolutional neural networks (CNNs), however a theory is missing to justify their behaviors.
@@ -118,4 +118,33 @@ Notes:
     - Decompose the second-order dynamics into two components. The first is related to potential games, which reduces to gradient descent on an implicit function; the second relates to Hamiltonian games, a new class of games that obey a conservation law, akin to conservation laws in **classical mechanical systems**. 
     - Propose Symplectic Gradient Adjustment (SGA), a new algorithm for finding stable fixed points in general games.
   - Result: SGA is competitive for finding Local Nash equilibria in GANs.
-### Important Researchers
+### Important Researchers （To be added）
+
+### Seminal Papers
+ - Overparameterization:
+ 1. Learning and Generalization in Overparameterized Neural Networks, Going Beyond Two Layers: [pdf](https://proceedings.neurips.cc/paper/2019/file/62dad6e273d32235ae02b7d321578ee8-Paper.pdf)(NeurIPS 2019) <br/> This paper proves an important concept class that contains three-layer (resp. two-layer) neural networks equipped with smooth activations can be efficiently learned by three-layer (resp. two-layer) ReLU neural networks via SGD or its variants. It can be seen as the meta theoretical support of robustness guarantee of the wide neural networks.(Seminal)
+ 2. On the Optimization of Deep Networks: Implicit Acceleration by Overparameterization: [pdf](http://proceedings.mlr.press/v80/arora18a/arora18a.pdf)(ICML 2018) <br/> This paper suggests that the overparameterization via the increasing depth is beneficial to the convergence of the optimization in deep learning.
+ 3. The Generalization Error of the Minimum-norm Solutions for Over-parameterized Neural Networks: [pdf](https://arxiv.org/abs/1912.06987)(Journal of Pure and Applied Functional Analysis 2020) <br/> This paper proves that for all three over-parameterized models including the random feature model, NN, and ResNet, the generalization error for the minimum-norm solution is comparable to the Monte Carlo rate.(Seminal)
+ 4. How SGD Selects the Global Minima in Over-parameterized Learning: A Dynamical Stability Perspective: [pdf](https://proceedings.neurips.cc/paper/2018/file/6651526b6fb8f29a00507de6a49ce30f-Paper.pdf)(NeurIPS 2018) <br/> This paper provides a dynamic stability of SGD that batch-size and learning rate is important.
+ 5. Fine-Grained Analysis of Optimization and Generalization for Overparameterized Two-Layer Neural Networks: [pdf](https://arxiv.org/pdf/1901.08584.pdf)(NeurIPS 2019) <br/> This paper analyzes a simple 2-layer ReLU net with random initialization.
+ 6. Learning Overparameterized Neural Networks via Stochastic Gradient Descent on Structured Data: [pdf](https://papers.nips.cc/paper/2018/file/54fe976ba170c19ebae453679b362263-Paper.pdf)(NeurIPS 2018) <br/> This paper proves the generalization ability of SGD in the over-parameterized settings with the well-separated data distribution.
+ 7. Toward Moderate Overparameterization: Global Convergence Guarantees for Training Shallow Neural Networks: [pdf](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9081945)( IEEE JOURNAL ON SELECTED AREAS IN INFORMATION THEORY 2020) <br/> This paper utilizes the tools of random matrix theory and gives a bound of the spectrum of Hadamard matrices to prove the generalization ability of wide shallow neural networks. (Seminal)
+
+- Generalization:
+1. Stronger generalization bounds for deep nets via a compression approach: [pdf](http://proceedings.mlr.press/v80/arora18b/arora18b.pdf)(ICML 2018) <br/> This paper derives a $L_{2}$-norm generalization bound.
+2. Understanding deep learning requires rethinking generalization: [pdf](ICLR 2017) <br/> This paper inspects the influence of the explicit and implicit regularization on the generalization of deep learning from the theoretical and empirical perspective.
+
+- Optimization:
+1. Entropy-sgd: Biasing gradient descent into wide valleys: [pdf](https://arxiv.org/pdf/1611.01838v5.pdf)(ICLR 2017) <br/> This paper proposes a new optimization scheme that Langevin dynamics helps SGD converge to a global minma from the perspctive of energy function.
+2. Train faster, generalize better: Stability of stochastic gradient descent: [pdf](http://proceedings.mlr.press/v48/hardt16.pdf)(ICML 2016) <br/> This paper anlayzes the stability of SGD from the Lipschitz condition.
+
+
+ - NTK:
+ 1. Backward Feature Correction: How Deep Learning Performs Deep Learning: [pdf](https://arxiv.org/pdf/2001.04413.pdf)(arxiv 2020) <br/> This paper is long. It finds that training higher-level layers in the network can actually improve the features of lower-level ones.
+ 2. Network size and weights size for memorization with two-layers neural networks: [pdf](https://arxiv.org/pdf/2006.02855.pdf)(NeurIPS 2020) <br/> This paper presents the construction of memorization neural networks with the optimal numbers of neurons.
+
+ -Adversarial Examples:
+ 1. A single gradient step finds adversarial examples on random two-layers neural networks: [pdf](https://arxiv.org/abs/2104.03863)(arxiv 2021) <br/> This paper discusses adversarial examples on two-layers neural networks at (random) initialization. 
+ 2. A law of robustness for two-layers neural networks: [pdf](https://arxiv.org/abs/2009.14444)(COLT 2020) <br/> This paper achieves the conjecture that the over-parameterization is significant to robustness that the O(1)-Lipschitz continuity is proved.
+ 3. A Universal Law of Robustness via Isoperimetry: [pdf](https://proceedings.neurips.cc/paper/2021/file/f197002b9a0853eca5e046d9ca4663d5-Paper.pdf)(NeurIPS 2021) <br/> This paper provides an insight that the over-parameterizaion is the guarantee of the robustness via the isoperimetry.
+
