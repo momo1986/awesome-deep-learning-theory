@@ -129,19 +129,29 @@ Notes:
  5. Fine-Grained Analysis of Optimization and Generalization for Overparameterized Two-Layer Neural Networks: [pdf](https://arxiv.org/pdf/1901.08584.pdf)(NeurIPS 2019) <br/> This paper analyzes a simple 2-layer ReLU net with random initialization.
  6. Learning Overparameterized Neural Networks via Stochastic Gradient Descent on Structured Data: [pdf](https://papers.nips.cc/paper/2018/file/54fe976ba170c19ebae453679b362263-Paper.pdf)(NeurIPS 2018) <br/> This paper proves the generalization ability of SGD in the over-parameterized settings with the well-separated data distribution.
  7. Toward Moderate Overparameterization: Global Convergence Guarantees for Training Shallow Neural Networks: [pdf](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9081945)( IEEE JOURNAL ON SELECTED AREAS IN INFORMATION THEORY 2020) <br/> This paper utilizes the tools of random matrix theory and gives a bound of the spectrum of Hadamard matrices to prove the generalization ability of wide shallow neural networks. (Seminal)
+ 8. How much over-parameterization is sufficient to learn deep ReLU networks?: [pdf](https://openreview.net/pdf?id=fgd7we_uZa6)(ICLR 2021) <br/> This paper inspects that a network width condition that is polylogarithmic in the sample size n and the inverse of target error $\varepsilon^{-1}$ is sufficient to guarantee the learning of deep ReLU networks.
+ 9. Convex Formulation of Overparameterized Deep Neural Networks: [pdf](https://ieeexplore.ieee.org/document/9146135)(Proceedings of the IEEE 2020) <br/> This paper gives a survey on the mathematical model of over-parameterized DNNs.
 
 - Generalization:
 1. Stronger generalization bounds for deep nets via a compression approach: [pdf](http://proceedings.mlr.press/v80/arora18b/arora18b.pdf)(ICML 2018) <br/> This paper derives a $L_{2}$-norm generalization bound.
 2. Understanding deep learning requires rethinking generalization: [pdf](ICLR 2017) <br/> This paper inspects the influence of the explicit and implicit regularization on the generalization of deep learning from the theoretical and empirical perspective.
+3. A Closer Look at Memorization in Deep Networks: [pdf](https://arxiv.org/pdf/1706.05394.pdf)(ICML 2017) <br/>  This paper inpects the effect of data on the memorization of neural network.
+4. What Neural Networks Memorize and Why: Discovering the Long Tail via Inﬂuence Estimation: [pdf](https://papers.nips.cc/paper/2020/file/1e14bfe2714193e7af5abc64ecbd6b46-Paper.pdf)(NeurIPS 2020) <br/> This paper inspects the relationship between the generalization and memorization that the ability of DNNS is built on the highest accuracy of clean data in the long-tailed distribution.
+5. What Do Neural Networks Learn When Trained With Random Labels?: [pdf](https://www.researchgate.net/publication/342301963_What_Do_Neural_Networks_Learn_When_Trained_With_Random_Labels)(NeurIPS 2019) <br/> This paper studies the alignment between the principal components of network parameters and data with regard to the random labels.
+6. Exploring Generalization in Deep Learning: [pdf](https://proceedings.neurips.cc/paper/2017/file/10ce03a1ed01077e3e289f3e53c72813-Paper.pdf)(NeurIPS 2017) <br/> This paper explains why the model capacity of CNN can be large enough to overfit any random label. Moreover, it gives a generalization bound from the PAC-Bayes theory. 
+7. Spectrally-normalized margin bounds for neural networks: [pdf](https://arxiv.org/pdf/1706.08498)(NeurIPS 2017) <br/> This paper analyzes the margin-normalized spectral complexity of deep learning.
 
 - Optimization:
 1. Entropy-sgd: Biasing gradient descent into wide valleys: [pdf](https://arxiv.org/pdf/1611.01838v5.pdf)(ICLR 2017) <br/> This paper proposes a new optimization scheme that Langevin dynamics helps SGD converge to a global minma from the perspctive of energy function.
 2. Train faster, generalize better: Stability of stochastic gradient descent: [pdf](http://proceedings.mlr.press/v48/hardt16.pdf)(ICML 2016) <br/> This paper anlayzes the stability of SGD from the Lipschitz condition.
+3. Convergence Analysis of Two-layer Neural Networks with ReLU Activation: [pdf](https://papers.nips.cc/paper/2017/file/a96b65a721e561e1e3de768ac819ffbb-Paper.pdf)(NeurIPS 2017) <br/> This paper utilizes the method of “identity mapping” that SGD converges to the global minimum in polynomial number of steps with standard O(1/sqrt(d)) initialization of the weights.
+4. Gradient descent optimizes over-parameterized deep ReLU networks: [pdf](https://arxiv.org/abs/1811.08888)(Springer Machine Learning Journal 2020) <br/> This paper studies the problem of training deep fully connected neural networks with Rectiﬁed Linear Unit (ReLU) activation function and cross entropy loss function for binary classiﬁcation using gradient descent.
 
 
  - NTK:
  1. Backward Feature Correction: How Deep Learning Performs Deep Learning: [pdf](https://arxiv.org/pdf/2001.04413.pdf)(arxiv 2020) <br/> This paper is long. It finds that training higher-level layers in the network can actually improve the features of lower-level ones.
  2. Network size and weights size for memorization with two-layers neural networks: [pdf](https://arxiv.org/pdf/2006.02855.pdf)(NeurIPS 2020) <br/> This paper presents the construction of memorization neural networks with the optimal numbers of neurons.
+ 3. A mean field view of the landscape of two-layer neural networks: [pdf](https://pubmed.ncbi.nlm.nih.gov/30054315/)(PNAS 2018) <br/> This paper study the SGD dynamics of two-layer neural networks from the perspective of PDE.
 
  -Adversarial Examples:
  1. A single gradient step finds adversarial examples on random two-layers neural networks: [pdf](https://arxiv.org/abs/2104.03863)(arxiv 2021) <br/> This paper discusses adversarial examples on two-layers neural networks at (random) initialization. 
